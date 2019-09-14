@@ -1,0 +1,198 @@
+/*Reset CSS*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+
+.header {
+	margin-top: 70px;
+}
+
+.navbar {
+	margin-bottom: 46px;
+}
+
+.navbar-brand {
+	text-transform: uppercase;
+	font-family: 'Inconsolata';
+	font-size: 30px;
+}
+
+.navbar .navbar-collapse .nav-item {
+	padding: 0 60px;
+}
+
+.navbar .navbar-collapse .nav-link {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Playfair Display';
+	transition-duration: 1s;
+}
+
+.navbar .navbar-collapse .nav-link:hover {
+	color: black;
+	transform: translateY(-5px);
+}
+
+.header img {
+	width: 100%;
+}
+
+/* Section 1 */
+
+.section-1 {
+	margin-top: 100px;
+	max-width: 900px; 
+}
+
+.tag {
+	font-size: 14px;
+	font-family: "Ubuntu";
+	color: rgb(180, 173, 158);
+	text-transform: uppercase;
+	line-height: 1.2;
+	padding-bottom: 25px;
+}
+
+.heading {
+	font-size: 30px;
+	font-family: "Playfair Display";
+	line-height: 1.2;
+	padding-bottom: 30px;
+}
+
+.heading a {
+	text-decoration: none;
+	color: rgb(98, 98, 98);
+}
+
+.desc {
+	font-size: 14px;
+	font-family: "Playfair Display";
+	color: rgb(98, 98, 98);
+	line-height: 1.714;
+	padding-bottom: 50px;
+}
+
+.comment {
+	font-size: 14px;
+	font-family: "Ubuntu";
+	color: rgb(180, 173, 158);
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+
+/* Section 2 */
+.section-2 {
+	margin-top: 130px;
+	max-width: 900px;
+}
+
+.card {
+	margin-bottom: 130px;
+}
+
+.card:nth-child(odd) {
+	padding-right: 30px;
+}
+
+.card:nth-child(even) {
+	padding-left: 30px;
+}
+
+.card-body {
+	padding-top: 30px;
+}
+
+.card-title {
+	font-size: 30px;
+	font-family: "Playfair Display";
+	color: rgb(98, 98, 98);
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+
+.card-text {
+	font-size: 14px;
+	font-family: "Playfair Display";
+	color: rgb(98, 98, 98);
+	line-height: 1.714;
+}
+
+/* Section 3 */
+.section-3 {
+	height: 290px;
+	background-color: #f0f0f0;
+}
+
+.section-3 div {
+	font-size: 30px;
+	font-family: "Playfair Display";
+	color: rgb(51, 51, 51);
+	line-height: 1.2;
+	padding-top: 70px;
+	padding-bottom: 80px;
+}
+
+.section-3 .email {
+	width: 400px;
+	background: #f0f0f0;
+	outline: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom:1px solid #000000;
+	font-size: 14px;
+	font-family: "Playfair Display";
+	color: rgb(98, 98, 98);
+	line-height: 1.714;
+}
+
+.section-3 .submit {
+	transform: translateX(-35px);
+}
+
+/* Section 4 */
+.section-4 {
+	margin-top: 100px;
+	max-width: 900px;
+}
+
+.loadmore {
+	margin-top: 30px;
+	margin-bottom: 1350px;
+	width: 165px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	font-family: "Playfair Display";
+	background: white;
+}
+
+/* Footer */
+footer {
+	height: 100px;
+	background-color: #f0f0f0;
+	font-size: 14px;
+	font-family: "Playfair Display";
+	line-height: 100px;
+}
+
+.footer-left span:first-child {
+	padding-right: 15px;
+}
+
+.footer-right a {
+	padding: 0 15px;
+}
+
+.footer-right a:last-child {
+	padding-right: 0;
+}
+
+
