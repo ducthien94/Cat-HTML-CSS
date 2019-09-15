@@ -3,3 +3,42 @@
 		max-width: 1090px;
 	}	
 }
+
+@media (max-width: 991px) {
+	.header {
+		margin-top: 35px;
+	}
+	.navbar .navbar-collapse .nav-item {
+		padding: 0;
+	}
+
+	.section-1 {
+		margin-top: 50px;
+	}
+
+	.loadmore {
+		margin-bottom: 700px;
+	}
+}
+
+@media (max-width: 767px) {
+	.section-2 {
+		margin-top: 65px;
+	}
+	.card {
+		margin-bottom: 65px;
+	}
+	.card:nth-child(odd) {
+		padding-right: 15px;
+	}
+
+	.card:nth-child(even) {
+		padding-left: 15px;
+	}
+}
+
+@media (max-width: 575px) {
+	.loadmore {
+		margin-bottom: 500px;
+	}
+}
