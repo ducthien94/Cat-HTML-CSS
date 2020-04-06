@@ -1,4 +1,53 @@
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 600px;
+    }
+    .header {
+        height: 450px;
+    }
+    /* Contact */
+    .contact__title, .image-gallery h1 {
+        font-size: 70px;
+        letter-spacing: 15px;
+    }
+    .contact-form input {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    /* Image gallery */
+    .images {
+        display: block;
+        padding-top: 5px;
+    }
+    .column {
+        max-width: 100%;
+    }
+    .column2 {
+        padding: 0 10px;
+    }
+    /* Section 3 */
+    .section3 {
+        flex-direction: column;
+    }
+    .section3 .left {
+        padding: 60px 40px;
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .section3 .left > span {
+        font-size: 70px;
+    }
+    .section3 .left > span:first-child {
+        margin-bottom: 60px;
+    }
+    .big-text {
+        font-size: 100px;
+    }
+    .section3 .right {
+        margin-left: 0;
+    }
+}
 
 
 @media only screen and (min-width: 600px) {}
@@ -7,9 +56,11 @@
 @media only screen and (min-width: 768px) {}
 
 
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1441px) {
+    .container {
+        width: 100%;
+    }
 }
