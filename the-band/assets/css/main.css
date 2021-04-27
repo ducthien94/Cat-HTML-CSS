@@ -106,6 +106,10 @@ body {
     position: relative;
 }
 
+#navbar-nav>li:last-child {
+    padding: 15px;
+}
+
 #navbar-nav>li.active {
     background-color: #29292c;
 }
