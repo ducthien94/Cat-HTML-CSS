@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Common */
+.clear {
+    clear: both;
+}
+
+.row {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-4 {
+    width: 33.333333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.btn {
+    color: #fff;
+    background-color: #2d2d30;
+    text-decoration: none;
+    padding: 11px 16px;
+    margin-top: 15px;
+    display: inline-block;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #2d2d30;
+    background-color: #ccc;
+}
+
+/* Main */
+#main {}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d30bd;
+    z-index: 1;
+}
+
+#logo {
+    color: #d5d5d5;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 12px;
+}
+
+#navbar-nav {
+    list-style-type: none;
+    display: flex;
+    height: 46px;
+}
+
+#navbar-nav>li {
+    /* padding: 15px; */
+    position: relative;
+}
+
+#navbar-nav>li.active {
+    background-color: #29292c;
+}
+
+#navbar-nav>li:hover {
+    background-color: #29292c;
+}
+
+#navbar-nav > li:hover .sub-nav {
+    display: block;
+}
+
+#navbar-nav > li:hover a {
+    color: #fff;
+}
+
+#navbar-nav>li a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+#navbar-nav > li > a {
+    text-decoration: none;
+    padding: 15px;
+    line-height: 46px;
+    color: #d5d5d5;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#navbar-nav > li i {
+    color: #d5d5d5;
+}
+
+#navbar-nav .sub-nav {
+    list-style-type: none;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    box-shadow: 0 0 10px #00000080;
+    display: none;
+}
+
+#navbar-nav .sub-nav li {
+    padding: 7px 15px;
+}
+
+#navbar-nav .sub-nav li a {
+    display: inline-block;
+    width: 100%;
+    color: #777;
+}
+
+#navbar-nav .sub-nav li:hover {
+    background-color: #29292c
+}
+
+#header #menu-mobile-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    color: #fff;
+    display: none;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background-image: url(https://www.w3schools.com/bootstrap/chicago.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 32px;
+    color: #fff;
+    text-align: center;
+}
+
+#slider .text-content .text-heading {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#slider .text-content .text-desc {
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+#content .content-section {
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px 112px;
+    margin: 0 auto;
+}
+
+#content .section-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 25px;
+    opacity: 0.6;
+}
+
+
+#content .about-content {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list {
+    margin-top: 48px;
+}
+
+#content .member-name {
+    font-size: 15px;
+
+    font-weight: 500;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 155px;
+    border-radius: 5px;
+}
+
+#content .tour-section {
+    color: #fff;
+    background-color: #2d2d30;
+    width: 100%;
+}
+
+#content .ticket-list {
+    list-style: none;
+    color: #000;
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+#content .ticket-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+#content .ticket-list .sold-out {
+    padding: 4px 6px;
+    margin-left: 16px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #D9534F;
+}
+
+#content .ticket-list li:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+#content .ticket-list .quantity {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background-color: #2d2d30;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+}
+
+#content .place-list {
+    margin-top: 32px;
+}
+
+#content .place-img,
+#content .place-img img {
+    width: 100%;
+    transition: 0.4s;
+    vertical-align: middle;
+}
+
+#content .place-img img:hover {
+    opacity: 0.5;
+}
+
+#content .place-info {
+    padding: 16px;
+    font-size: 15px;
+    font-style: italic;
+    color: #2d2d30;
+    background-color: #fff;
+}
+
+#content .place-padding {
+    font-weight: 500;
+}
+
+#content .place-time {
+    opacity: 0.7;
+    margin-top: 15px;
+}
+
+#content .place-desc {
+    margin-top: 15px;
+}
+
+/* #content .place-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #2d2d2d;
+    text-decoration: none;
+    padding: 11px 16px;
+    margin-top: 15px;
+    transition: 0.4s;
+} */
+
+/* #content .place-btn:hover {
+    color: #2d2d30;
+    background-color: #ccc;
+} */
+
+/* Contact */
+.contact-content {
+    /* display: flex; */
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info span {
+    width: 25px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-form textarea.form-control {
+    resize: none;
+}
+
+.contact-form input[type='submit'] {
+    float: right;
+}
+
+.map-section img {
+    width: 100%;
+    height: auto;
+}
+
+#footer {
+    padding: 64px 16px;
+}
+
+#footer .social-list {
+    text-align: center;
+    font-size: 25px;
+}
+
+#footer a {
+    color: #777;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #b8b7b7;
+}
+
+#footer .copyright {
+    text-align: center;
+    font-size: 15px;
+     color: #777;
+}
